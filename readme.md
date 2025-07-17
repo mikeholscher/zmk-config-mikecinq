@@ -76,7 +76,7 @@ Go for the 35g version of the switch. The 65g is insane. These switches are roug
 This is hard. Be gentle or you will bend the switch, which means SMD reworking, which you do not want. While mounted, slide the keycap towards the top or bottom row and lift a corner on the side you are pushing towards. IMPORTANT: After lifting the first corner, lift the other corner on that top row or bottom row side! Prevent releasing the left or right side corners first! You will bend the tiny metal arms a lot more easily if you leave only the left or right side of the cap attached. So: first release to the two top (or bottom) corners, and NOT the two right or left side corners of the cap.
 
 ### disclaimer
-Building and tweaking this keeb is unlike a Choc or MX board. These PG1316 switches are relatively new and are designed to be attached to PCBs in professional reflow ovens in large quantities. They are not meant for the DIY community. Soldering is hard, removing keycaps is hard, and the parts are tiny and unforgiving. You WILL find yourself swearing when building this keeb.  
+Building and tweaking this keeb is unlike a Choc or MX board. These PG1316 switches are relatively new and are designed to be attached to PCBs in professional reflow ovens in large quantities. They are not meant for the DIY community. Soldering is hard, removing keycaps is hard, and the parts are tiny and unforgiving. You WILL find yourself swearing when building this keeb. Don't say I didn't warn you!
 
 
 
