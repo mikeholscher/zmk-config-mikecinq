@@ -1,0 +1,97 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/rgb.h>
+
+&led_strip { chain-length = <1>; };
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+
+        capsword {
+            bindings = <&caps_word>;
+            key-positions = <13 16>;
+            layers = <0 1>;
+            timeout-ms = <50>;
+        };
+
+        System_Layer {
+            bindings = <&mo 5>;
+            key-positions = <32 30>;
+            layers = <0 1>;
+            timeout-ms = <50>;
+        };
+    };
+
+    behaviors {
+        as: as {
+            compatible = "zmk,behavior-hold-tap";
+            label = "AS";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        ColemakDH_Base {
+            bindings = <
+&as LS(Q) Q  &as LS(W) W  &as LS(F) F  &as LS(P) P  &as LS(B) B  &as LS(J) J  &as LS(L) L    &as LS(U) U          &as LS(Y) Y       &as LS(SQT) SQT
+&as LS(A) A  &as LS(R) R  &as LS(S) S  &as LS(T) T  &as LS(G) G  &as LS(M) M  &as LS(N) N    &as LS(E) E          &as LS(I) I       &as LS(O) O
+&as LS(Z) Z  &as LS(X) X  &as LS(C) C  &as LS(D) D  &as LS(V) V  &as LS(K) K  &as LS(H) H    &as SEMICOLON COMMA  &as COLON PERIOD  &as EXCLAMATION QUESTION
+                          &kp ESCAPE   &lt 4 SPACE  &lt 2 TAB    &lt 3 ENTER  &kp BACKSPACE  &kp DEL
+            >;
+        };
+
+        Rupestris_Base {
+            bindings = <
+&as LS(Z) Z  &as LS(L) L                     &as LS(R) R  &as LS(K) K  &as LS(F) F  &as LS(V) V  &as LS(W) W    &as LS(U) U          &as LS(O) O       &as LS(Y) Y
+&as LS(S) S  &as LS(T) T                     &as LS(N) N  &as LS(D) D  &as LS(P) P  &as LS(M) M  &as LS(G) G    &as LS(E) E          &as LS(A) A       &as LS(I) I
+&as LS(X) X  &as DOUBLE_QUOTES SINGLE_QUOTE  &as LS(Q) Q  &as LS(H) H  &as LS(B) B  &as LS(C) C  &as LS(H) H    &as SEMICOLON COMMA  &as COLON PERIOD  &as EXCLAMATION QUESTION
+                                             &kp ESCAPE   &lt 4 SPACE  &lt 2 TAB    &lt 3 ENTER  &kp BACKSPACE  &kp DEL
+            >;
+        };
+
+        Number {
+            bindings = <
+&none  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp N0      &none   &none            &none              &none          &none
+&none  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PERIOD  &none   &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_GUI
+&none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS   &none   &none            &trans             &trans         &trans
+                     &trans        &trans        &trans      &trans  &trans           &trans
+            >;
+        };
+
+        Symbol {
+            bindings = <
+&kp CARET     &kp PIPE   &kp BACKSLASH  &kp SLASH         &kp EQUAL  &kp GRAVE    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none  &none
+&kp ASTERISK  &kp HASH   &kp AMPERSAND  &kp AT_SIGN       &kp PLUS   &kp PERCENT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none  &none
+&kp TILDE     &kp UNDER  &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS  &kp DOLLAR   &kp LEFT_BRACE        &kp RIGHT_BRACE        &none  &none
+                         &trans         &trans            &trans     &trans       &trans                &trans
+            >;
+        };
+
+        Navigation {
+            bindings = <
+&kp LG(Z)     &kp LG(X)     &kp LG(C)         &kp LG(V)       &kp LG(LS(NUMBER_4))  &none   &none           &kp UP_ARROW    &none            &none
+&kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LS(LG(N5))        &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
+&kp LC(Z)     &kp LC(X)     &kp LC(C)         &kp LC(V)       &none                 &none   &none           &none           &none            &none
+                            &trans            &trans          &trans                &trans  &trans          &trans
+            >;
+        };
+
+        System {
+            bindings = <
+&rgb_ug RGB_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SPD                  &rgb_ug RGB_SPI                    &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4
+&rgb_ug RGB_ON   &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFR                  &rgb_ug RGB_EFF                    &tog 1        &none           &none           &none         &none
+&rgb_ug RGB_OFF  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_COLOR_HSB(0,100,50)  &rgb_ug RGB_COLOR_HSB(206,100,50)  &bt BT_CLR    &bt BT_CLR_ALL  &studio_unlock  &sys_reset    &bootloader
+                                  &trans           &trans                           &trans                             &trans        &trans          &trans
+            >;
+        };
+    };
+};
