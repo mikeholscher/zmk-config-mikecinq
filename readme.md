@@ -23,7 +23,7 @@ If you wish to commercially exploit this design, contact me at info@mikeholscher
 ![](images/mikecinq1.jpg)
 
 mikecinq is a blend of my own [mikefive](https://github.com/mikeholscher/zmk-config-mikefive) keyboard with aesthetic inspiration from [Le Chifre](https://github.com/tominabox1/Le-Chiffre-Keyboard) and [Le Oeuf](https://github.com/eggsworks/le-oeuf).
-Just like mikefive, it features Kailh PG1316S switches in a Corne unibody layout with a more aligned thumb cluster and a total height of 5mm. On May 10th 2025, I showed it to the world on r/emk in [this post](https://www.reddit.com/r/ErgoMechKeyboards/comments/1kjbfr5/mikecinq_my_second_pg1316s_keyboard_incl_long/) with more information on the design choices and pictures.
+Just like mikefive, it features Kailh PG1316S switches in a Corne unibody layout with a more aligned thumb cluster. The top face of the case is slanted to allow unobstructed use of the thumb clusters while maintaining a 5mm back edge to house a battery, controller, and USB-C port. The front case edge is 3mm tall. It is wireless with several months of battery life. On May 10th 2025, I showed it to the world on r/emk in [this post](https://www.reddit.com/r/ErgoMechKeyboards/comments/1kjbfr5/mikecinq_my_second_pg1316s_keyboard_incl_long/) with more information on the design choices and pictures.
 
 - In the files folder, you can find all the files to order and build your own mikecinq.
 - This repo also contains all the files to build your own ZMK firmware using GitHub Actions.
