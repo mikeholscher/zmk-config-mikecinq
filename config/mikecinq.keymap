@@ -3,8 +3,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
 
-&led_strip { chain-length = <1>; };
-
 / {
     combos {
         compatible = "zmk,combos";
