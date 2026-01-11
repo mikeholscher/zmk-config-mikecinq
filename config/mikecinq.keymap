@@ -119,19 +119,19 @@
 
         NumNav {
             bindings = <
-&none         &kp NUMBER_7           &kp NUMBER_8        &kp NUMBER_9             &kp N0      &kp LG(LS(NUMBER_4))  &none     &kp UP    &none      &none
-&kp LEFT_GUI  &as NUMBER_4 LEFT_ALT  &as LCTRL NUMBER_5  &as LEFT_SHIFT NUMBER_6  &kp PERIOD  &kp LG(LS(NUMBER_5))  &kp LEFT  &kp DOWN  &kp RIGHT  &none
-&none         &kp NUMBER_1           &kp NUMBER_2        &kp NUMBER_3             &kp MINUS   &none                 &none     &none     &none      &none
-                                     &none               &trans                   &none       &none                 &trans    &none
+&none         &kp NUMBER_7           &kp NUMBER_8        &kp NUMBER_9             &kp N0      &kp LG(LS(NUMBER_4))  &none          &kp UP    &none      &none
+&kp LEFT_GUI  &as NUMBER_4 LEFT_ALT  &as LCTRL NUMBER_5  &as LEFT_SHIFT NUMBER_6  &kp PERIOD  &kp LG(LS(NUMBER_5))  &kp LEFT       &kp DOWN  &kp RIGHT  &none
+&none         &kp NUMBER_1           &kp NUMBER_2        &kp NUMBER_3             &kp MINUS   &none                 &none          &none     &none      &none
+                                     &none               &trans                   &none       &none                 &kp BACKSPACE  &none
             >;
         };
 
         SymSys {
             bindings = <
-&kp CARET     &kp PIPE   &kp BACKSLASH  &kp SLASH         &kp EQUAL  &kp GRAVE    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none  &none
-&kp ASTERISK  &kp HASH   &kp AMPERSAND  &kp AT_SIGN       &kp PLUS   &kp PERCENT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none  &none
-&kp TILDE     &kp UNDER  &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS  &kp DOLLAR   &kp LEFT_BRACE        &kp RIGHT_BRACE        &none  &none
-                         &none          &trans            &none      &none        &trans                &none
+&kp CARET     &kp PIPE   &kp BACKSLASH  &kp SLASH          &kp EQUAL  &kp GRAVE    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none  &none
+&kp ASTERISK  &kp HASH   &kp AMPERSAND  &kp AT_SIGN        &kp PLUS   &kp PERCENT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none  &none
+&kp TILDE     &kp UNDER  &kp LESS_THAN  &kp GREATER_THAN   &kp MINUS  &kp DOLLAR   &kp LEFT_BRACE        &kp RIGHT_BRACE        &none  &none
+                         &none          &kp LC(BACKSPACE)  &none      &none        &trans                &none
             >;
         };
 
