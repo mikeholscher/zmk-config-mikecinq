@@ -140,10 +140,10 @@
 
         Symbols {
             bindings = <
-&kp CARET     &kp PIPE   &kp BACKSLASH  &kp SLASH          &kp EQUAL  &kp GRAVE    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none  &none
-&kp ASTERISK  &kp HASH   &kp AMPERSAND  &kp AT_SIGN        &kp PLUS   &kp PERCENT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none  &none
-&kp TILDE     &kp UNDER  &kp LESS_THAN  &kp GREATER_THAN   &kp MINUS  &kp DOLLAR   &kp LEFT_BRACE        &kp RIGHT_BRACE        &none  &none
-                         &none          &kp LC(BACKSPACE)  &none      &none        &trans                &none
+&kp CARET     &kp PIPE   &kp BACKSLASH  &kp SLASH          &kp EQUAL  &kp GRAVE    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LS(LA(NUMBER_2))  &none
+&kp ASTERISK  &kp HASH   &kp AMPERSAND  &kp AT_SIGN        &kp PLUS   &kp PERCENT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none                 &none
+&kp TILDE     &kp UNDER  &kp LESS_THAN  &kp GREATER_THAN   &kp MINUS  &kp DOLLAR   &kp LEFT_BRACE        &kp RIGHT_BRACE        &none                 &none
+                         &none          &kp LA(BACKSPACE)  &none      &none        &trans                &none
             >;
         };
 
