@@ -8,14 +8,14 @@
 
         CapsWord {
             bindings = <&caps_word>;
-            key-positions = <3 4>;
+            key-positions = <13 16>;
             layers = <0 1>;
-            timeout-ms = <50>;
+            timeout-ms = <20>;
             require-prior-idle-ms = <150>;
         };
 
         SystemLayer {
-            bindings = <&mo 4>;
+            bindings = <&mo 5>;
             key-positions = <31 34>;
             layers = <0 1>;
             timeout-ms = <50>;
@@ -25,8 +25,8 @@
         Enter {
             bindings = <&kp ENTER>;
             key-positions = <13 12>;
-            layers = <0 2 1>;
-            timeout-ms = <50>;
+            layers = <0 3 1>;
+            timeout-ms = <20>;
             require-prior-idle-ms = <150>;
         };
 
@@ -90,7 +90,7 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <3 2>;
             timeout-ms = <20>;
-            layers = <2>;
+            layers = <3>;
             require-prior-idle-ms = <150>;
         };
     };
@@ -116,7 +116,7 @@
 &as LS(Q) Q  &as LS(W) W  &as LS(F) F  &as LS(P) P  &as LS(B) B  &as LS(J) J  &as LS(L) L      &as LS(U) U          &as LS(Y) Y       &as LS(SQT) SQT
 &as LS(A) A  &as LS(R) R  &as LS(S) S  &as LS(T) T  &as LS(G) G  &as LS(M) M  &as LS(N) N      &as LS(E) E          &as LS(I) I       &as LS(O) O
 &as LS(Z) Z  &as LS(X) X  &as LS(C) C  &as LS(D) D  &as LS(V) V  &as LS(K) K  &as LS(H) H      &as SEMICOLON COMMA  &as COLON PERIOD  &as EXCLAMATION QUESTION
-                          &none        &lt 2 SPACE  &none        &none        &lt 3 BACKSPACE  &none
+                          &none        &lt 3 SPACE  &none        &none        &lt 4 BACKSPACE  &none
             >;
         };
 
@@ -125,7 +125,16 @@
 &as LS(Z) Z  &as LS(L) L                     &as LS(R) R  &as LS(K) K  &as LS(F) F  &as LS(V) V  &as LS(W) W      &as LS(U) U          &as LS(O) O       &as LS(Y) Y
 &as LS(S) S  &as LS(T) T                     &as LS(N) N  &as LS(D) D  &as LS(P) P  &as LS(M) M  &as LS(G) G      &as LS(E) E          &as LS(A) A       &as LS(I) I
 &as LS(X) X  &as DOUBLE_QUOTES SINGLE_QUOTE  &as LS(Q) Q  &as LS(H) H  &as LS(B) B  &as LS(C) C  &as LS(H) H      &as SEMICOLON COMMA  &as COLON PERIOD  &as EXCLAMATION QUESTION
-                                             &none        &lt 2 SPACE  &none        &none        &lt 3 BACKSPACE  &none
+                                             &none        &lt 3 SPACE  &none        &none        &lt 4 BACKSPACE  &none
+            >;
+        };
+
+        Plain_Qwerty_Base {
+            bindings = <
+&kp Q  &kp W  &kp E  &kp R        &kp T  &kp Y  &kp U            &kp I      &kp O    &kp P
+&kp A  &kp S  &kp D  &kp F        &kp G  &kp H  &kp J            &kp K      &kp L    &kp SEMI
+&kp Z  &kp X  &kp C  &kp V        &kp B  &kp N  &kp M            &kp COMMA  &kp DOT  &kp FSLH
+              &none  &lt 3 SPACE  &none  &none  &lt 4 BACKSPACE  &none
             >;
         };
 
@@ -149,10 +158,10 @@
 
         System {
             bindings = <
-&tog 1  &none  &none  &none   &none  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4
-&none   &none  &none  &none   &none  &bt BT_CLR    &bt BT_CLR_ALL  &none         &none           &none
-&none   &none  &none  &none   &none  &none         &none           &sys_reset    &studio_unlock  &bootloader
-               &none  &trans  &none  &none         &trans          &none
+&tog 1  &tog 2  &none  &none   &none  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4
+&none   &none   &none  &none   &none  &bt BT_CLR    &bt BT_CLR_ALL  &none         &none           &none
+&none   &none   &none  &none   &none  &none         &none           &sys_reset    &studio_unlock  &bootloader
+                &none  &trans  &none  &none         &trans          &none
             >;
         };
     };
