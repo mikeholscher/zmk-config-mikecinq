@@ -17,7 +17,7 @@
         SystemLayer {
             bindings = <&mo 5>;
             key-positions = <31 34>;
-            layers = <0 1>;
+            layers = <0 1 2>;
             timeout-ms = <50>;
             require-prior-idle-ms = <150>;
         };
