@@ -124,7 +124,7 @@
             bindings = <
 &as LS(Z) Z  &as LS(L) L                     &as LS(R) R  &as LS(K) K  &as LS(F) F  &as LS(V) V  &as LS(W) W      &as LS(U) U          &as LS(O) O       &as LS(Y) Y
 &as LS(S) S  &as LS(T) T                     &as LS(N) N  &as LS(D) D  &as LS(P) P  &as LS(M) M  &as LS(G) G      &as LS(E) E          &as LS(A) A       &as LS(I) I
-&as LS(X) X  &as DOUBLE_QUOTES SINGLE_QUOTE  &as LS(Q) Q  &as LS(H) H  &as LS(B) B  &as LS(C) C  &as LS(H) H      &as SEMICOLON COMMA  &as COLON PERIOD  &as EXCLAMATION QUESTION
+&as LS(X) X  &as DOUBLE_QUOTES SINGLE_QUOTE  &as LS(Q) Q  &as LS(H) H  &as LS(B) B  &as LS(C) C  &as LS(J) J      &as SEMICOLON COMMA  &as COLON PERIOD  &as EXCLAMATION QUESTION
                                              &none        &lt 3 SPACE  &none        &none        &lt 4 BACKSPACE  &none
             >;
         };
