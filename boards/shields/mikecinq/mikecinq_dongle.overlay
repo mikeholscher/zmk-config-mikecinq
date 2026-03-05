@@ -2,7 +2,7 @@
 #include "mikecinq-layouts.dtsi"
 
 &physical_layout0 {
-    transform = <&keymap_transform0>;
+    transform = <&matrix_transform>;
 };
 
 / {
