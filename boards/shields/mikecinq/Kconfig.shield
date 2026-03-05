@@ -1,2 +1,4 @@
 config SHIELD_MIKECINQ
     def_bool $(shields_list_contains,mikecinq)
+config SHIELD_MIKECINQ_DONGLE
+    def_bool $(shields_list_contains,mikecinq_dongle)   

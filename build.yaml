@@ -18,6 +18,11 @@
 #
 ---
 include:
-  - board: nice_nano
+  - board: nice_nano//zmk
     shield: mikecinq
     snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+  - board: zongle
+    shield: my_keeb_dongle
+  - board: zongle
+    shield: settings_reset
