@@ -1,5 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#import "mikecinq-layouts.dtsi"
+#include "mikecinq-layouts.dtsi"
 
 &physical_layout0 {
     transform = <&keymap_transform0>;
