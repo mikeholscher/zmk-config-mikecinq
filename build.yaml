@@ -18,6 +18,6 @@
 #
 ---
 include:
-  - board: nice_nano
+  - board: nice_nano//zmk
     shield: mikecinq
     snippet: studio-rpc-usb-uart
