@@ -23,8 +23,8 @@ include:
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   - board: nice_nano//zmk
     shield: settings_reset
-  - board: zongle
+  - board: zongle//zmk
     shield: mikecinq_dongle
     snippet: studio-rpc-usb-uart
-  - board: zongle
+  - board: zongle//zmk
     shield: settings_reset
