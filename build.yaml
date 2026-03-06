@@ -21,6 +21,8 @@ include:
   - board: nice_nano//zmk
     shield: mikecinq
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+  - board: nice_nano//zmk
+    shield: settings_reset
   - board: zongle
     shield: mikecinq_dongle
     snippet: studio-rpc-usb-uart
