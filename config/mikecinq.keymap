@@ -140,9 +140,9 @@
 
         NumNav {
             bindings = <
-&none         &kp NUMBER_7           &kp NUMBER_8        &kp NUMBER_9             &kp N0      &kp LG(LS(NUMBER_4))  &none          &kp UP    &none      &none
+&none         &kp NUMBER_7           &kp NUMBER_8        &kp NUMBER_9             &kp N0      &kp LG(LS(NUMBER_4))  &none          &kp UP    &none      &trans
 &kp LEFT_GUI  &as LEFT_ALT NUMBER_4  &as LCTRL NUMBER_5  &as LEFT_SHIFT NUMBER_6  &kp PERIOD  &kp LG(LS(NUMBER_5))  &kp LEFT       &kp DOWN  &kp RIGHT  &none
-&none         &kp NUMBER_1           &kp NUMBER_2        &kp NUMBER_3             &kp MINUS   &none                 &none          &none     &none      &none
+&none         &kp NUMBER_1           &kp NUMBER_2        &kp NUMBER_3             &kp MINUS   &none                 &none          &trans    &trans     &trans
                                      &none               &trans                   &none       &none                 &kp BACKSPACE  &none
             >;
         };
